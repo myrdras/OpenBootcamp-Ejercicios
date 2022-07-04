@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<form style="text-align: center;" action="action_page.php" method="get" accept-charset="utf-8">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br>
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido"><br>
+		<label for="e-mail">E-mail:</label>
+		<input type="text" id="e-mail" name="e-mail"><br>
+		<label for="telefono">Teléfono:</label>
+		<input type="text" id="telefono" name="telefono"><br>
+		<label for="direccion">Dirección:</label>
+		<input type="text" id="direccion" name="direccion"><br>
+		<input type="submit" name="submit" value="submit">
+	</form>
+
+	<br><br>
+
+	<table style="margin: 0 auto;">
+		<tr>
+			<th>Nombre</th>
+			<th>E-mail</th>
+			<th>Celular</th>
+			<th>Tel. Casa</th>
+		</tr>
+		<tr>
+			<td>Alan</td>
+			<td>alan1234@gmail.com</td>
+			<td colspan="2">1112345678</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Manuel</td>
+			<td>manitas@live.com</td>
+			<td>1145678932</td>
+			<td>46523214</td>
+		</tr>
+		<tr>
+			<td>manicito@hotmail.com</td>
+			<td>1178945632</td>
+			<td>44203157</td>
+		</tr>
+	</table>
+</body>
+</html>

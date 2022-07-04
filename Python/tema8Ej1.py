@@ -1,0 +1,10 @@
+archivo = open("test.txt", 'w')
+archivo.write("Mi primer archivo\nEste archivo\ntiene 3 lineas")
+archivo.close()
+
+archivo = open("test.txt", 'r+')
+print(archivo.read())
+archivo.write("\nAgrego algo mas")
+archivo.seek(0)
+print(archivo.read())
+archivo.close()

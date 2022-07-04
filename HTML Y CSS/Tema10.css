@@ -1,0 +1,35 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.cuadrado {
+	background-color: red;
+	width: 30rem;
+	height: 30rem;
+	margin-bottom: 3rem;
+}
+.video_imagen video {
+	width: 25rem;
+}
+.video_imagen img {
+	display: none;
+}
+@media screen AND (max-width:25rem) {
+	.cuadrado {
+		background-color: green;
+		width: 24rem;
+	}
+	.video_imagen img {
+		display: initial;
+		width: 20rem;
+	}
+	.video_imagen video {
+		display: none;
+	}		
+}
