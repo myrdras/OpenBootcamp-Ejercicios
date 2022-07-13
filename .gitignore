@@ -184,8 +184,29 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+### IntelliJ IDEA ###
+out/
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+nb-configuration.xml
+nbactions.xml
+
+### VS Code ###
+.vscode/
+.history/
+*.vsix
+
 # Mias
 Stuff/
-
-.idea/
-*.iml
