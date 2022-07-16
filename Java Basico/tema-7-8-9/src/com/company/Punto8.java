@@ -8,7 +8,7 @@ public class Punto8 {
 
     public static void main(String[] args) {
 
-        copiaFichero("C:/xampp/passwords.txt", "C:/passwords.txt");
+        copiaFichero("C:/xampp/passwords.txt", "passwords.txt");
 
     }
 
