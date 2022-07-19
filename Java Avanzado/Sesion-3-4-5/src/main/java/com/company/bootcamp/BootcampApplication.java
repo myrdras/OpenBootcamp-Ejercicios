@@ -1,13 +1,13 @@
-package com.company.bootcampers;
+package com.company.bootcamp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BootcampersApplication {
+public class BootcampApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootcampersApplication.class, args);
+		SpringApplication.run(BootcampApplication.class, args);
 	}
 
 }
