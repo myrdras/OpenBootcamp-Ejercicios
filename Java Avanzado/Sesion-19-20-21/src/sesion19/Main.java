@@ -1,19 +1,12 @@
+package sesion19;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-/*
-Identifica las características principales de la arquitectura limpia, indica en que casos
-se tendría que utilizar la arquitectura limpia y como lo harías.
 
-Teniendo en cuenta lo visto en la sesión 21, utiliza un proyecto de los trabajados y
-límpialo. Si encuentras código duplicado, elimínalo y realiza la minificación de las
-clases y métodos.
- */
 public class Main {
    public static void main(String[] args) {
       OptionsParser optionsParser = new OptionsParser(args);

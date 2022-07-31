@@ -1,3 +1,5 @@
+package sesion19;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
@@ -15,10 +17,7 @@ public class OptionsParser {
 
     public void registerOption(String optionName) {
         options.put(optionName, "");
-        if (Objects.equals(firstOption, optionName)) {
-            parse();
-            lista.add(options);
-        }
+
         if (firstOption == null) {
             firstOption = optionName;
         }
@@ -29,12 +28,17 @@ public class OptionsParser {
     }
 
     public ArrayList<HashMap<String, String>> getLista() {
+        parse();
         return lista;
     }
 
     public void parse() {
         for (int i = 0; i < args.length; i++) {
             String optionName = args[i].replace("-", "");
+
+            if (Objects.equals(firstOption, optionName) && i != 0) {
+                lista.add(options);
+            }
 
             if (options.containsKey(optionName)) {
                 setOptionValue(args[i], args[i+1]);
